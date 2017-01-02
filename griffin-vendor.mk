@@ -148,9 +148,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
     vendor/motorola/griffin/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/motorola/griffin/proprietary/lib64/libiio.so:system/lib64/libiio.so \
-    vendor/motorola/griffin/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
-    vendor/motorola/griffin/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
-    vendor/motorola/griffin/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/motorola/griffin/proprietary/lib64/libmdmcutback.so:system/lib64/libmdmcutback.so \
     vendor/motorola/griffin/proprietary/lib64/libmm-omxcore.so:system/lib64/libmm-omxcore.so \
     vendor/motorola/griffin/proprietary/lib64/libmodmanager.so:system/lib64/libmodmanager.so \
@@ -183,8 +180,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/lib/libiio.so:system/lib/libiio.so \
     vendor/motorola/griffin/proprietary/lib/libjscore.so:system/lib/libjscore.so \
     vendor/motorola/griffin/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
-    vendor/motorola/griffin/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/motorola/griffin/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/motorola/griffin/proprietary/lib/libmbs.so:system/lib/libmbs.so \
     vendor/motorola/griffin/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/griffin/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -265,6 +260,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libgdtap.so:system/vendor/lib64/libgdtap.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libGPreqcancel.so:system/vendor/lib64/libGPreqcancel.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libGPTEE.so:system/vendor/lib64/libGPTEE.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
@@ -294,6 +292,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmdmimgload.so:system/vendor/lib64/libmdmimgload.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libmdsprpc.so:system/vendor/lib64/libmdsprpc.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
+    vendor/motorola/griffin/proprietary/vendor/lib64/libmmQSM.so:system/vendor/lib64/libmmQSM.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so \
     vendor/motorola/griffin/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
@@ -581,6 +581,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libqisl.so:system/vendor/lib/libqisl.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
@@ -603,11 +604,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libscve_mv.so:system/vendor/lib/libscve_mv.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libscve_stub.so:system/vendor/lib/libscve_stub.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:system/vendor/lib/libSonyIMX230PdafLibrary.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
