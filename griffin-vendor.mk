@@ -661,6 +661,7 @@ PRODUCT_PACKAGES += \
     VrInputMethod \
     VrYoutube \
     atfwd \
+    CNEService \
     com.qualcomm.location \
     qcrilmsgtunnel \
     colorservice \
